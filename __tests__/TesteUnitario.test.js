@@ -5,5 +5,5 @@ import renderer from 'react-test-renderer';
 
 it("Passou", () => {
     const Teste = renderer.create(<TesteUnitario />).getInstance();
-    expect(Teste.somar(4,4)).toBe(5);
+    expect(Teste.somar(4,4)).toEqual(8);
 })
